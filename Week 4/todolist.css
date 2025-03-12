@@ -1,0 +1,62 @@
+body > header {
+    font-size: large;
+    font-weight: bold;
+}
+
+article > header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+article > p {
+    font-size: small;
+    font-weight: italic;
+}
+
+article > subHeader {
+    font-style: italic;
+    font-weight: bold;
+    font-size: small;
+}
+
+body {
+    background-color: #16161d;
+    color: white;
+    font-family: minecraft enchantment;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #2c2f31;
+    text-align: center;
+}
+
+nav > ul {
+    line-height: 40px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 45px;
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: aqua
+}
+
+nav > ul > li > a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+article > header:hover{
+    color: greenyellow;
+    font-size: 30px;
+}

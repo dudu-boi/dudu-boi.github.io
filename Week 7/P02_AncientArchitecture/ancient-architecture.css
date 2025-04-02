@@ -1,0 +1,143 @@
+body {
+    font-family: Roboto, sans-serif;
+    background: #e2d7aa;
+    color: #000000; /* Text Color */
+    font-size: 16px; /* Text size */
+    width: 1180px;
+    margin: 0 auto; /* Center the container */
+}
+
+img {
+    width: 1100px;
+    height: 450px;
+}
+
+.image-container {
+    width: 1600px;
+    height: 450px;
+    margin-top: 65px;
+}
+
+h1 {
+    font-size: 60px; /* Text size */
+    text-align: center; /* Center the text */
+    margin-top: 65px;
+    font-family: 'Indie Flower', cursive;
+}
+
+nav {
+    margin: 30px;
+    padding: 0 5px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Space between menu items */
+}
+
+a {
+    font-size: 18px; /* Hyperlink text size */
+    color: #000000; /* Hyperlink text color */
+}
+
+a:hover {
+    color: #0a2d4a; /* Hyperlink hover text color */
+    font-weight: bold; /* Hyperlink font weight */
+}
+
+main {
+    display: flex; /* Arrange articles side by side */
+    justify-content: space-between; /* Add space between articles */
+    gap: 20px; /* Add spacing between articles */
+    margin-top: 20px;
+}
+
+main article {
+    display: inline-block;
+}
+
+article {
+    background: #433a17; /* Light background color */
+    color: white;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Add padding inside the article */
+    width: 30%; /* Set width for each article */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+article img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Match the rounded corners of the article */
+    margin-bottom: 15px; /* Add space below the image */
+}
+
+article h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white; /* Darker text color for contrast */
+}
+
+article .href a {
+    color: white
+}
+
+article p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: white; /* Softer text color */
+    margin-bottom: 15px;
+}
+
+article p:first-letter {
+    font-family: EucrosiaUPC, sans-serif;
+    font-size: 40px; /* First letter text size */
+}
+
+article .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure buttons span the full width */
+    margin-top: auto; /* Push buttons to the bottom */
+}
+
+article .buttons a {
+    background: #d2691e; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px; /* Rounded corners for buttons */
+    text-align: center;
+    flex: 1; /* Make buttons equal width */
+    margin: 0 5px; /* Add spacing between buttons */
+}
+
+article .buttons a:hover {
+    background: #a0522d; /* Darker shade on hover */
+}
+
+span a {
+    background: url(images/bg2.jpg);
+    color: #ffffff; /* Hyperlink in span text color */
+    padding: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center; /* Center the text */
+}
+
+article p:last-of-type span:first-of-type a::before {
+    content: url("images/comment.png");
+    position: relative;
+    right: 5px;
+    top: 7px;
+    padding: 10px;
+}

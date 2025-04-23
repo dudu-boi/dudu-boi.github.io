@@ -41,7 +41,7 @@ a {
 }
 
 a:hover {
-    color: #0a2d4a; /* Hyperlink hover text color */
+    color: #ff0000; /* Hyperlink hover text color */
     font-weight: bold; /* Hyperlink font weight */
 }
 
@@ -66,7 +66,7 @@ article {
     display: flex;
     flex-direction: column; /* Stack content vertically */
     align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text */
+    text-align: left; /* Center text */
 }
 
 article img {
@@ -80,6 +80,7 @@ article h2 {
     font-size: 20px;
     margin-bottom: 10px;
     color: white; /* Darker text color for contrast */
+    text-align: center
 }
 
 article .href a {

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Compilation</title>
+    <style>
+        .caption {
+            font-size: 1.2rem;
+            color: grey;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Bahrain Grand Prix</h1>
+        <p class="caption">Where dreams go to die</p>
+        <p>
+            Ah yes, the Formula 1 Bahrain Grand Prix, also known as the annual parade of over-engineered lawnmowers doing laps in a desert while billionaires pretend it's thrilling. Set against a scenic backdrop of sand, sweat, and soul-crushing predictability, this race never fails to remind us that “racing” is sometimes just code for “Max Verstappen wins again and everyone else plays musical chairs behind him.”
+        </p>
+
+        <section>
+            <h2>The Track</h2>
+            <p class = "caption">With Ferrari's cutting edge and Red Bull's tractor</p>
+            <p>
+                Welcome to the <strong>Bahrain International Circuit</strong> – a place where corners are plentiful, excitement is not, and DRS zones are the F1 equivalent of pity mechanics for the slow kids. Designed with action in mind, the reality is more like a 57-lap formation parade interrupted by pit stops that commentators pretend are dramatic.
+            </p>
+            <iframe
+                width="500"
+                height="285"
+                src="https://www.youtube.com/embed/ZpZHQaPMrS4"
+                frameborder="0"
+                title="Bahrain GP Track Analysis"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section>
+            <h2>The Drama</h2>
+            <p class = "caption">Or lack thereof</p>
+            <p>
+                Once again, the biggest drama wasn’t on track, but in the radio messages: drivers crying about tyres, engineers acting like therapists, and strategists playing 4D chess with 2D IQs. Red Bull? Dominating. Ferrari? Strategically imploding. Mercedes? Still soul-searching. And McLaren? Looking stunning… in the garage with another DNF.
+            </p>
+            <iframe
+                width="500"
+                height="285"
+                src="https://www.youtube.com/embed/lGaIyfeuGlk"
+                frameborder="0"
+                title="Bahrain GP Drama Recap"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>
+                In summary: the Bahrain GP delivered everything it promised — sand, disappointment, and a podium so predictable it could’ve been printed before the race even started. But hey, the fireworks at the end were nice… pity they weren’t for the race itself.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Pirated 2023 - All Regret Served
+    </footer>
+</body>
+</html>

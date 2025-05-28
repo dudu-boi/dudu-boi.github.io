@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Display Date and Time</title>
+    <style>
+        input {
+            width: 400px;
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        var timer = null;
+
+        function play() {
+            var daysOfWeek = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
+            var today = new Date();
+
+            // Hiển thị ngày
+            document.f.d.value = "Hôm nay là: " + daysOfWeek[today.getDay()] +
+                ", ngày " + today.getDate() +
+                ", tháng " + (today.getMonth() + 1) +
+                ", năm " + today.getFullYear();
+
+            // Hiển thị giờ
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            document.f.t.value = "Bây giờ là: " + (h > 12 ? h - 12 : h) +
+                ":" + (m < 10 ? "0" + m : m) +
+                ":" + (s < 10 ? "0" + s : s) +
+                (h >= 12 ? " PM" : " AM");
+
+            // Lặp lại sau 1 giây
+            timer = setTimeout(play, 1000);
+        }
+
+        function stop() {
+            clearTimeout(timer);
+        }
+    </script>
+</head>
+<body onload="play()">
+    <center>
+        <form name="f">
+            <input name="d" readonly /><br />
+            <input name="t" readonly /><br />
+            <button type="button" onclick="play()">Chạy đồng hồ</button>
+            <button type="button" onclick="stop()">Ngừng đồng hồ</button>
+        </form>
+    </center>
+</body>
+</html>

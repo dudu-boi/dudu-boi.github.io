@@ -1,0 +1,31 @@
+body {
+            font-family: Arial, Helvetica, sans-serif;
+        }    
+        
+       .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card  {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            background: #fafafa;
+            box-shadow: 8px 4px rgba(0,0,0,0.04);
+            transition: box-shadow 0.2s, background-color 0.2s;
+        }
+        .product-card h1 {
+            margin: 8px;
+        }
+        
+        .product-card p {
+            margin: 8px;
+            color: #333;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            background-color: #f1f1f1;
+        }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Multiplication Table</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h2 { text-align: center; }
+        .container { margin: 0 auto; max-width: 400px; }
+        .error { color: red; }
+        #result { margin-top: 10px; }
+    </style>
+
+    <script>
+        function generateTable() {
+            const num = document.getElementById('number').value;
+            const result = document.getElementById('result');
+            
+            if (!num || isNaN(num)) {
+                result.innerHTML = "<span class='error'>Please enter a valid number</span>";
+                return;
+            }
+            
+            let table = `<b>Multiplication Table for ${num}:</b><br>`;
+            for (let i = 1; i <= 10; i++) {
+                table += `${num} × ${i} = ${num * i}<br>`;
+            }
+            
+            result.innerHTML = table;
+        }
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <h2>MULTIPLICATION TABLE</h2>
+        <div>
+            <label for="number">Which multiplication table do you want to display?</label>
+            <input id="number" type="number"  placeholder="Enter a number to show" oninput="generateTable()">
+        </div>
+        <div id="result"></div>
+    </div>
+</body>
+</html>

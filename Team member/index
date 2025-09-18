@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team YeetForce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Meet Our Team</h1>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">About Us</a></li>
+        <li><a href="#" class="nav-link">Members</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Employees of the Month</h2>
+    <section class="member-grid">
+
+      <article class="member-card">
+        <h3>Bombardillo Crocodillo</h3>
+        <p><strong>Title:</strong> Chief Vibes Engineer</p>
+        <p>
+          Once drank 3 litres of oat milk and invented a coding framework powered by crystal healing. Debugs servers through interpretive dance and crystal proximity.
+        </p>
+        <p><strong>Email:</strong> <a href="mailto:bombardillo@yeetforce.net">bombardillo@yeetforce.net</a></p>
+        <p><strong>Location:</strong> Floating in the metaverse loading screen.</p>
+      </article>
+
+      <article class="member-card">
+        <h3>Jazzy Wazowsky</h3>
+        <p><strong>Title:</strong> Quantum Coffee Specialist</p>
+        <p>
+          Brews coffee that violates several laws of physics. Once debugged a kernel panic by whispering binary to a kitten.
+        </p>
+        <p><strong>Email:</strong> <a href="mailto:jazzy@nootnoot.net">jazzy@nootnoot.net</a></p>
+        <p><strong>Location:</strong> 404 Reality Not Found</p>
+      </article>
+
+      <article class="member-card">
+        <h3>Cruncho Supreme</h3>
+        <p><strong>Title:</strong> Chief Snack Officer</p>
+        <p>
+          Ate 100 tacos and built a blockchain in one night. Solves bugs by bribing the compiler with crisps.
+        </p>
+        <p><strong>Email:</strong> <a href="mailto:cruncho@snackbite.io">cruncho@snackbite.io</a></p>
+        <p><strong>Location:</strong> Beneath your desk, hoarding biscuits.</p>
+      </article>
+
+      <article class="member-card">
+        <h3>Pixel Prowler</h3>
+        <p><strong>Title:</strong> Digital Mischief Manager</p>
+        <p>
+          Hacked a toaster into a cryptocurrency miner. Frequently commits harmless code pranks with devastating efficiency.
+        </p>
+        <p><strong>Email:</strong> <a href="mailto:prowler@pixel.com">prowler@pixel.com</a></p>
+        <p><strong>Location:</strong> Somewhere in the cloud, giggling.</p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Team YeetForce. All rights yeeted.</p>
+    <p>
+      Follow us on
+      <a href="https://twitter.com/yeetforce" class="social-link">Twitter</a>,
+      <a href="https://instagram.com/yeetforce" class="social-link">Instagram</a>,
+      <a href="https://facebook.com/yeetforce" class="social-link">Facebook</a>.
+    </p>
+  </footer>
+</body>
+</html>

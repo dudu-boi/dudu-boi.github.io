@@ -1,0 +1,102 @@
+body {
+    font-family: 'Open sans', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+main{
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem auto;
+    width: 100%;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    transform: scale(1.0);
+    margin: 0rem 1rem;
+}
+
+nav a:hover {
+    color: lightgreen;
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform: scale(1.2);
+}
+
+nav a:active {
+    color: #4CAF50;
+}
+
+nav a:visited {
+    color: #4CAF50;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+th:hover, td:hover {
+    background-color: lightgray;
+}
+
+button {
+    background-color: lightgray;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    /* background-color: lightgray; */
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.updateInventory {
+    width: 80%;
+    margin: 20px auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Catalogue Manager</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css"> <!-- make sure the filename matches! -->
+    </head>
+
+    <body>
+        <nav id="mainNav">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Help</a>
+        </nav>
+        <button onclick = "toggleMenu()">Show/Hide Menu</button>
+        <main>
+                <h2>Book Catalogue</h2>
+            <section id = "bookCatalogue">
+                <table id = "bookTable">
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Price &pound;</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Anna Karenina</td>
+                        <td>Lev Tolstoy</td>
+                        <td>10.99</td>
+                    </tr>
+                </table>
+                <button onclick = "sortByPrice()">Sort By Price</button>
+                <button onclick = "changeTextColour()">Change Text Colour</button>
+            </section>
+
+            <section class = "updateInventory">
+                <h2>Update Inventory</h2>
+                <form id = "bookForm">
+                    <label for = "title">Title:</label>
+                    <input type = "text" id = "title" required>
+
+                    <label for = "author">Author:</label>
+                    <input type = "text" id = "author" required>
+
+                    <label for = "price">Price (&pound;):</label>
+                    <input type = "number" id = "price" min = "0" step = "0.01" required>
+                
+                    <button onclick = "updateInventory()">Update Inventory</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+                <p>&copy; 2025 Book Catalogue Manager</p>
+                <p>Created by <em>Cheeky Bastard 88</em> &trade;</p>
+            </footer>
+
+            <script src = "script.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2d3e50;
+    color: #fff;
+    padding: 2rem 3rem 1.5rem 3rem;
+    border-bottom: 4px solid #4fc3f7;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+header p {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+.profile_pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid #4fc3f7;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    padding: 2rem 2.5rem;
+}
+section {
+    margin-bottom: 2rem;
+}
+.contact {
+    font-size: 1.05rem;
+    color: #2d3e50;
+    background: #e3f2fd;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.introducion h2, .skill h2, .experience h2, .education h2 {
+    color: #1976d2;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #4fc3f7;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+.introducion p {
+    font-size: 1.08rem;
+    color: #444;
+    margin-top: 0.5rem;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 0.7rem;
+}
+.skills span {
+    background: #e0e7ef;
+    color: #1976d2;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.98rem;
+    box-shadow: 0 1px 4px rgba(76,195,247,0.08);
+}
+.experience ul {
+    list-style: none;
+    padding-left: 0;
+}
+.experience > ul > li {
+    margin-bottom: 1.2rem;
+}
+.job-title {
+    font-weight: bold;
+    color: #1976d2;
+}
+.experience ul ul {
+    margin-top: 0.4rem;
+    margin-left: 1.2rem;
+    list-style: disc;
+    color: #444;
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.2rem 1rem;
+    }
+    main {
+        padding: 1rem;
+    }
+    .profile_pic {
+        margin-top: 1rem;
+        width: 90px;
+        height: 90px;
+    }
+}

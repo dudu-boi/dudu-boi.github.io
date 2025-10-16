@@ -1,0 +1,45 @@
+div.items a{
+    color: red;
+    font-weight: bold;
+}
+
+
+div.private p+p{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+div > span {
+    background: dodgerblue;
+}
+span>span{
+    background-color: antiquewhite;
+}
+span{ background: #dfdfdf;}
+
+
+.apple{color:red}
+.orange{color: orange;}
+.small{font-size: 100px;}
+.apple.orange{
+    font-style: italic;
+}
+
+
+a[title="menu"]{
+    text-decoration:overline;
+    color: #962103;
+    font-size: 90px;
+}
+
+
+h1, h2, p{
+    text-decoration: none;
+}
+
+
+h1#header.intro{
+    text-decoration: underline;
+    color: #C00;
+}

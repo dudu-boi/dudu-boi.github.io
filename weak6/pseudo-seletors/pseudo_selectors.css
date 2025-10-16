@@ -1,0 +1,43 @@
+a:hover{
+    color: #D48F29;
+    text-decoration: underline overline;
+}
+
+a:visited{
+    color: #D48F29;
+}
+
+
+html:active{
+    background: yellow;
+}
+
+
+p:first-line{
+    color: blue;
+    background-color: red;
+}
+
+
+h1::before{ /* "<< " */
+    content: "\00AB\0020"
+}
+h1::after{/* " >>" */
+    content: "\0020\00BB"
+}
+
+
+tr:nth-child(2n) {
+    background: #95313b;
+    color: #fff;
+}
+tr:nth-child(2n+1) {
+    background: #3d2e30;
+    color: #e70606;
+}
+
+
+p:nth-of-type(2){
+    background: #95313b;
+    color: #fff;
+}

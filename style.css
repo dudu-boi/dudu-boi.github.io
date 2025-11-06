@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.shadowBox {
+    padding: 50px 120px;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border: 2px solid transparent;
+    border-color: aqua;
+    box-shadow: 10px 10px 20px rgba(255, 0, 0, 0.329);
+}
+
+.shadowBox:hover {
+    box-shadow: -10px -10px 30px rgba(55, 255, 0, 0.8);
+    border-color: red;
+}

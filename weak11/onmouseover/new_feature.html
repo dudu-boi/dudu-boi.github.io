@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function lighton(){
+            document.getElementById('myimage').src="light on.jpg";
+        }
+        function lightoff(){
+            document.getElementById('myimage').src="light off.jpg";
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript HTML Events</h1>
+    <h2>The onmousedown Attribute</h2>
+
+    <img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="light on.jpg" width="100" height="180">
+    <p>click mouse and hold down!</p>
+</body>
+</html>

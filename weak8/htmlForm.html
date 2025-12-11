@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Example</title>
+</head>
+<body>
+    <form>
+        <!-- label example -->
+        <label for="username" required>Username:</label>
+        <input type="text" id="username" name="username" placeholder="NateHiggers88"><br><br> <!--placeholder is suggestion for the field-->
+
+        <label for="password" required>Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <!-- checkbox example -->
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Remember me</label><br>
+        <input type = "checkbox" id="save_password" name = "save_password" checked>
+        <label for="save_password">Save Password</label><br><br>
+        
+        <!-- radio button example -->
+        <input type = "radio" name = "gender" value = "male" required> Male
+        <input type = "radio" name = "gender" value = "female"> Female 
+        <input type = "radio" name = "gender" value = "monke"> Monke
+        <br><br>
+
+        <!-- select box example -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="amongUs" selected>Anonymus</option> <!--use selected for default option-->
+        </select><br><br>
+
+        <!-- file upload example -->
+        <label for="profile_picture">Upload Profile Picture:</label>
+        <input type="file" id="profile_picture" name="profile_picture"><br>
+        <br>
+
+        <!-- textarea example -->
+        <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea><br><br>
+        
+        <!-- submit button example -->
+        <input type="submit" value="Register">
+
+        <!-- reset button example -->
+        <input type="reset" value="Reset">
+    </form>

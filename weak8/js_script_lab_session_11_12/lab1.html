@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="Content-Type" name = "viewport" content = "text/html, width=device-width, initial-scale=1.0">
+    <title>ex02</title>
+</head>
+<body>
+    <script>
+        var txta = prompt("Enter num A: ");
+        var txtb = prompt("Enter num B: ");
+
+        if(txta == null || txta =="" || isNaN(txta)){
+            alert("Invalid input for A");
+        } else if (txtb == null || txtb =="" || isNaN(txtb)){
+            alert("Invalid input for B");
+        } else {
+            var a = parseFloat(txta);
+            var b = parseFloat(txtb);
+            var sum = a + b;
+            alert("The sum of " + txta + " and " + txtb + " is:\n" + sum);
+        }
+    </script>
+</body>

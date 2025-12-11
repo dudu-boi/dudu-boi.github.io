@@ -1,0 +1,156 @@
+/* =========================================================
+   The "I tried... sort of" Cyberpunk CSS — refined edition
+   ========================================================= */
+
+body {
+  background: radial-gradient(circle at top left, #0d0d1a, #060611 80%);
+  color: #c8f7ff;
+  font-family: "Segoe UI", sans-serif;
+  padding: 40px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Headings */
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #00e0ff;
+  text-shadow: 0 0 10px #00e0ff, 0 0 20px #ff00c8;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* The Great Form Container */
+form {
+  background: rgba(20, 20, 30, 0.9);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2), inset 0 0 15px rgba(255, 0, 255, 0.1);
+  padding: 25px 30px;
+  width: 90%;
+  max-width: 700px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: 600;
+  color: #ff57e3;
+  margin-top: 10px;
+}
+
+/* Inputs, selects, textarea */
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  background: #0b0b16;
+  color: #c8f7ff;
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 0.95rem;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #00ffff;
+  box-shadow: 0 0 8px #00ffffaa;
+}
+
+/* Range + color input styling */
+input[type="range"] {
+  width: 100%;
+  accent-color: #00ffff;
+}
+
+input[type="color"] {
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Radio and checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+  accent-color: #00ffff;
+  transform: scale(1.2);
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 1px dashed rgba(255, 0, 255, 0.3);
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+legend {
+  color: #00ffff;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn.neon,
+input[type="submit"] {
+  background: linear-gradient(90deg, #00ffff, #ff00d4);
+  color: #000;
+  box-shadow: 0 0 10px #00ffff80, 0 0 20px #ff00d480;
+}
+
+.btn.neon:hover,
+input[type="submit"]:hover {
+  background: linear-gradient(90deg, #ff00d4, #00ffff);
+  transform: translateY(-2px);
+}
+
+.btn.ghost,
+input[type="reset"] {
+  background: transparent;
+  border: 1px solid #888;
+  color: #aaa;
+}
+
+.btn.ghost:hover,
+input[type="reset"]:hover {
+  border-color: #00ffff;
+  color: #00ffff;
+}
+
+.footer {
+  text-align: center;
+  color: #777;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}

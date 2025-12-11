@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mini Calculator</title>
+        <link rel="stylesheet" href="mini_calculator.css" />
+        <script src="mini_calculator.js"></script>
+    </head>
+    <body>
+        <form name="frmCal" onsubmit="return false;">
+            <table border="0" align="center">
+                <tr><td colspan="2" align="center">
+                    <h2>MINI CALCULATOR</h2>
+                </td></tr>
+                <tr><td align="right">a:</td>
+                <td><input name="txta" size="10" /></td></tr>
+                <tr><td align="right">b:</td>
+                <td><input name="txtb" size="10" /></td></tr>
+                <tr><td align="right">Operator:</td>
+                <td>
+                    <select name="slto">
+                        <option value="+">Addition (+)</option>
+                        <option value="-">Subtraction (-)</option>
+                        <option value="*">Multiplication (*)</option>
+                        <option value="/">Division (/)</option>
+                        <option value="%">Modulo (%)</option>
+                        <option value="^">Power (a^b)</option>
+                        <option value="cm">CM (list)</option>
+                        <option value="cf">CF (list)</option>
+                    </select>
+
+                </td></tr>
+                <tr><td align="right">Result:</td>
+                <td><input name="txtr" size="10" readonly /></td></tr>
+                <tr><td colspan="2" align="center">
+                    <input type="button" value="Calculate" onclick="calculate()" />
+                    <input type="reset" value="Clear" />
+                </td></tr>
+            </table>
+        </form>
+    </body>
+</html>

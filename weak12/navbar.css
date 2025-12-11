@@ -1,0 +1,237 @@
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+body.depressed {
+    background-color: #1a1a1a;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff006e, #ffbe0b, #08f7fe, #00ff41);
+    background-size: 200% 100%;
+    animation: shift 3s infinite;
+    box-shadow: 0 0 30px #ff006e, 0 0 60px #08f7fe;
+    transition: 0.5s;
+}
+
+.navbar.hidden {
+    display: none;
+}
+
+.navbar.depressed {
+    background: linear-gradient(90deg, #333, #444);
+    animation: fade 4s infinite;
+    box-shadow: 0 0 5px #555;
+}
+
+@keyframes shift {
+    0%, 100% { background-position: 0%; }
+    50% { background-position: 100%; }
+}
+
+@keyframes fade {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 0.5; }
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ffbe0b;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #ffbe0b;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ff006e;
+    box-shadow: 0 0 30px #ff006e;
+    transform: scale(1.1);
+}
+
+.navbar.depressed a {
+    background-color: #555;
+    color: #888;
+    box-shadow: none;
+}
+
+.navbar.depressed a:hover {
+    background-color: #666;
+    box-shadow: 0 0 5px #777;
+    transform: scale(1.02);
+}
+
+.toggle-neon,
+.toggleMenu {
+    position: fixed;
+    right: 20px;
+    padding: 8px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff006e, #ffbe0b, #08f7fe);
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff006e, 0 0 10px #ffbe0b;
+    animation: pulse 1.5s infinite;
+    transition: 0.3s;
+    z-index: 1000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.toggle-neon {
+    top: 20px;
+}
+
+.toggleMenu {
+    top: 55px;
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 15px #ff006e, 0 0 10px #ffbe0b; }
+    50% { box-shadow: 0 0 20px #08f7fe, 0 0 15px #ff006e; }
+}
+
+.toggle-neon:hover,
+.toggleMenu:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 30px #ff006e, 0 0 25px #08f7fe;
+}
+
+.toggle-neon:active,
+.toggleMenu:active {
+    transform: scale(0.9);
+}
+
+.toggle-neon.depressed, .toggleMenu.depressed {
+    background: #444;
+    color: #888;
+    box-shadow: 0 0 3px #666;
+    animation: none;
+    border-color: #555;
+}
+
+.toggle-neon.depressed:hover,
+.toggleMenu.depressed:hover {
+    background: #555;
+    color: #999;
+    box-shadow: 0 0 5px #777;
+    transform: scale(1.05);
+}
+
+.table-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.componentTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 20px #ff006e;
+    transition: 0.5s;
+}
+
+.componentTable th {
+    background: linear-gradient(90deg, #ff006e, #ffbe0b, #08f7fe);
+    color: #000;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.componentTable td {
+    padding: 12px 15px;
+    border-bottom: 2px solid #ff006e;
+    color: #fff;
+}
+
+.componentTable tr:hover {
+    background-color: rgba(255, 0, 110, 0.1);
+}
+
+.componentTable.depressed {
+    background-color: #222;
+    box-shadow: 0 0 5px #555;
+}
+
+.componentTable.depressed th {
+    background: linear-gradient(90deg, #333, #444);
+    color: #888;
+    text-shadow: none;
+}
+
+.componentTable.depressed td {
+    border-bottom: 2px solid #444;
+    color: #888;
+}
+
+.componentTable.depressed tr:hover {
+    background-color: rgba(100, 100, 100, 0.1);
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+.sortByPrice,
+.sortByNameRating {
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff006e, #ffbe0b, #08f7fe);
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff006e;
+    animation: pulse 1.5s infinite;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sortByPrice:hover,
+.sortByNameRating:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff006e, 0 0 15px #08f7fe;
+}
+
+.sortByPrice:active,
+.sortByNameRating:active {
+    transform: scale(0.95);
+}
+
+body.depressed .sortByPrice,
+body.depressed .sortByNameRating {
+    background: #444;
+    color: #888;
+    box-shadow: 0 0 3px #666;
+    animation: none;
+    border-color: #555;
+}
+
+body.depressed .sortByPrice:hover,
+body.depressed .sortByNameRating:hover {
+    background: #555;
+    color: #999;
+    box-shadow: 0 0 5px #777;
+    transform: scale(1.05);
+}

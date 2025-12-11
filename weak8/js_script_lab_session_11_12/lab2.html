@@ -1,0 +1,20 @@
+!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="Content-Type" name = "viewport" content = "text/html, width=device-width, initial-scale=1.0">
+    <title>ex03</title>
+</head>
+<body>
+    <script>
+        var txta = prompt("Enter any integer: ");
+
+        if(txta == null || txta =="" || isNaN(txta)){
+            document.write("<font color = 'red'>Invalid input for integer</font>");
+        } else if(txta % 2 == 0) {
+            document.write("<font color = 'green'><b>" + txta + " is an even integer</b></font>");
+        } else {
+            document.write("<font color = 'blue'><b>" + txta + " is an odd integer</b></font>");
+        }
+    </script>
+</body>

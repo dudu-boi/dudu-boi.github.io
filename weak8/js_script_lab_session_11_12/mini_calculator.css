@@ -1,0 +1,69 @@
+/* --- global fever dream --- */
+body {
+    background: #000;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #39ff14; /* radioactive green */
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+/* --- table as neon shrine --- */
+table {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #00e5ff;
+    border: 2px solid #ff00ff;
+}
+
+/* --- header glowing like a migraine --- */
+h2 {
+    color: #ff00ff;
+    text-shadow:
+        0 0 5px #ff00ff,
+        0 0 10px #00e5ff,
+        0 0 20px #39ff14;
+    margin-bottom: 10px;
+}
+
+/* --- labels --- */
+td[align="right"] {
+    color: #00e5ff;
+    font-weight: bold;
+}
+
+/* --- inputs: the neon cylinders of destiny --- */
+input, select {
+    background: #111;
+    color: #39ff14;
+    border: 2px solid #ff00ff;
+    border-radius: 6px;
+    padding: 5px;
+    box-shadow: 0 0 10px #00e5ff;
+}
+
+input[readonly] {
+    color: #ffea00; /* electric yellow */
+    box-shadow: 0 0 10px #ffea00;
+}
+
+/* --- buttons: rave incarnate --- */
+input[type="button"], input[type="reset"] {
+    cursor: pointer;
+    background: #ff00ff;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 6px;
+    text-shadow: 0 0 5px #00e5ff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ffea00;
+    transition: 0.15s;
+}
+
+input[type="button"]:hover, input[type="reset"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #39ff14, 0 0 40px #ff00ff;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Multiplication Table</title>
+        
+        <script src="multiplication_table.js"></script>
+    </head>
+    <body>
+        <form name="f" onsubmit="return false;">
+            <table border="0" align="center">
+                <tr><td colspan="2" align="center">
+                    <h2>MULTIPLICATION TABLE</h2>
+                </td></tr>
+                <tr><td align="right">Which multiplication table do you want to display?</td>
+                <td><input name="a" size="5" onchange="display()" /></td></tr>
+                <tr><td colspan="2" align="center">
+                    <iframe id="view_area" width="300" height="250"></iframe>
+                </td></tr>
+            </table>
+        </form>
+    </body>
+</html>

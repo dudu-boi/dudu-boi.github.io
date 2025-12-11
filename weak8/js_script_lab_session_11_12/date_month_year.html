@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>dates in month</title>
+        <script language="javascript">
+            function isLeapYear(n) {
+                return (n % 4 == 0 && n % 100 != 0) || (n % 400 == 0);
+            }
+            function update() {
+                year = document.f.year;
+                month = document.f.month;
+                date = document.f.date;
+                if(year.value == "" || isNaN(year.value)) {
+                    alert("Please enter a valid year.");
+                    year.focus();
+                } else {
+                    switch(month.value) {
+                        case "1":
+                        case "3":
+                        case "5":
+                        case "7":
+                        case "8":
+                        case "10":
+                        case "12":
+                            date.value = "31";
+                            break;
+                        case "4":
+                        case "6":
+                        case "9":
+                        case "11":
+                            date.value = "30";
+                            break;
+                        case "2":
+                            date.value = isLeapYear(year.value) ? "29" : "28";
+                            break;
+
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body onload = "update()">
+        <form name = "f">
+            <table border = "0" align = "center">
+                <tr>
+                    <td colspan = "2" align = "center">
+                        <h2>DATES IN MONTH</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td align = "right">Year:</td>
+                    <td><input name = "year" value = "2025" onblur = "update()" /></td>
+                </tr>
+                <tr>
+                    <td align = "right">Month:</td>
+                    <td>
+                        <select name = "month" onchange = "update()">
+                            <option value = "1">January</option>
+                            <option value = "2">February</option>
+                            <option value = "3">March</option>
+                            <option value = "4">April</option>
+                            <option value = "5">May</option>
+                            <option value = "6">June</option>
+                            <option value = "7">July</option>
+                            <option value = "8">August</option>
+                            <option value = "9">September</option>
+                            <option value = "10">October</option>
+                            <option value = "11">November</option>
+                            <option value = "12" selected>December</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Date: </td>
+                    <td><input name = "date" readonly="readonly" /></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
